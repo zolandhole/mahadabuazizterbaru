@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_iklan"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_putih"
+    android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:id="@+id/photoiklan"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="300dp"
+            android:layout_gravity="start"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/photoiklan"
+            android:id="@+id/juduliklan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/judul_iklan"
+            android:textSize="16sp"
+            android:fontFamily="@font/robotocondensed"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/juduliklan"
+            android:id="@+id/descriptioniklan"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deskripsi_iklan"
+            android:fontFamily="@font/robotothin"
+            android:layout_marginBottom="10dp"/>
+</RelativeLayout>

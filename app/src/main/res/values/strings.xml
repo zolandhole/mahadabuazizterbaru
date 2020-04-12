@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Mahad Abu Aziz</string>
+    <string name="kajian_online_streaming">Kajian Online Streaming</string>
+    <string name="nama_asatid">NAMA ASATID</string>
+    <string name="judul_kajian">Judul Kajian</string>
+    <string name="putar">Putar</string>
+    <string name="running_text_here">Running Text Here .....</string>
+    <string name="nama_user">Nama User</string>
+    <string name="ketikan_pesan">Ketikan Pesan</string>
+    <string name="ma_had_abu_aziz">MA\'HAD ABU AZIZ</string>
+    <string name="alamat">Jl. Jamaras IV No. 11B-F RT.01 RW.01 Kel. Jatihandap Kec. Mandalajati Bandung 40195</string>
+    <string name="tidak_ada_koneksi_internert">Tidak ada Koneksi Internert!</string>
+    <string name="koneksi_lambat">Koneksi Lambat</string>
+    <string name="keterangan_offline">Saat ini tidak ada Kajian Online Streaming, kami akan memberitahukan melalui notifikasi pada saat Kajian Online Streaming dimulai</string>
+    <string name="offline">OFFLINE</string>
+    <string name="nama_pengirim">Nama Pengirim</string>
+    <string name="_00_21">00:21</string>
+    <string name="data_pesan">Data Pesan disimpan disini</string>
+    <string name="anda_login_sebagai">Anda Login sebagai</string>
+    <string name="email_example">contoh@example.com</string>
+    <string name="note_unregistered">Daftarkan Diri anda di Aplikasi Kajian Online Streaming Ma\'had Abu Aziz untuk berinteraksi secara langsung dengan Asatidz dengan mengklik tombol daftar dibawah</string>
+    <string name="daftar">Daftar</string>
+    <string name="ganti_user">Ganti User</string>
+    <string name="masuk_dengan_akun_facebook">Masuk dengan Akun Facebook</string>
+    <string name="atau">atau</string>
+    <string name="masuk_dengan_akun_google">Masuk dengan Akun Google</string>
+    <string name="list_rekaman_kajian">List Rekaman Kajian</string>
+    <string name="_20_jan_2012_12_00">20 Jan 2012 12:00</string>
+    <string name="tidak_ada_rekaman">tidak ada rekaman kajian</string>
+    <string name="kembali">kembali</string>
+    <string name="sedang_diputar">Sedang diputar</string>
+    <string name="dihentikan">Dihentikan</string>
+    <string name="dijeda">Dijeda</string>
+    <string name="_10_20">10:20</string>
+
+    <string name="facebook_app_id">1298190887056872</string>
+    <string name="fb_login_protocol_scheme">fb1298190887056872</string>
+    <string name="judul_iklan">Judul Iklan</string>
+    <string name="deskripsi_iklan">Deskripsi Iklan</string>
+    <string name="tidak_terhubung_ke_server_aplikasi_ini_membutuhkan_koneksi_internet_klik_tombol_mainkan_diatas_untuk_mencoba_menghubungkan_ulang_ke_server">Tidak terhubung ke Server, aplikasi ini membutuhkan koneksi Internet. Klik tombol mainkan diatas untuk mencoba menghubungkan ulang ke Server</string>
+    <string name="tv_error">Tekan tombol Play diatas untuk coba menghubungkan ulang, pastikan anda terhubung ke internet</string>
+    <string name="buffering">Buffering ...</string>
+
+</resources>
+

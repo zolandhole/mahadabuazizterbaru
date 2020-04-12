@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/ll_registered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilephoto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start"
+            app:civ_border_color="#fff"
+            android:src="@drawable/ic_account"
+            app:civ_border_width="1dp" />
+        <TextView
+            android:layout_below="@id/profilephoto"
+            android:id="@+id/namaprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_user"
+            android:textSize="16sp"
+            android:fontFamily="@font/robotocondensed"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_below="@+id/namaprofile"
+            android:id="@+id/emailprofile"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_example"
+            android:fontFamily="@font/robotothin"/>
+
+        <Button
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btn_gantiuser"
+            android:background="@drawable/button_abuabu"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/ganti_user"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_unregistered"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_unregistered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_unregistered"
+            android:fontFamily="@font/robotoregular"/>
+
+        <Button
+            android:id="@+id/btn_daftar"
+            android:background="@drawable/button_abuabu"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/info_unregistered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/daftar"/>
+    </RelativeLayout>
+
+</RelativeLayout>

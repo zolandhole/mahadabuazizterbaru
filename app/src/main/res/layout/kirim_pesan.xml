@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/kirim_pesan"
+    android:paddingTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/form_pesan"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:maxHeight="100dp"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:maxHeight="150dp"
+            android:fontFamily="@font/robotolight"
+            android:id="@+id/streaming_edittext"
+            android:layout_weight="3"
+            android:hint="@string/ketikan_pesan"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:background="@drawable/button_abu"
+            android:textCursorDrawable="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/streaming_sendpesan"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/send"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_colapsed_layout"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:contentDescription="@null"
+            android:src="@drawable/logoabuaziz"
+            android:layout_width="40dp"
+            android:alpha="0.5"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv_judul_kajian_notif"
+            android:textAlignment="center"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/robotoboldcon"
+            android:layout_height="wrap_content"
+            android:text="@string/judul_kajian"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:textAlignment="center"
+            android:fontFamily="@font/robotocondensed"
+            android:textSize="12sp"
+            android:layout_below="@+id/tv_judul_kajian_notif"
+            android:id="@+id/tv_pemateri_notif"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_asatid" />
+</RelativeLayout>

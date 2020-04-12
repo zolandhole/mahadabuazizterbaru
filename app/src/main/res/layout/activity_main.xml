@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:padding="10dp"
+        android:id="@+id/linear_kesalahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/robotoblack" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_error"
+            android:textAlignment="center"
+            android:fontFamily="@font/robotomedium" />
+    </LinearLayout>
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/judul_kajian"
+        layout="@layout/view_player" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/judul_kajian"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+
+    <!--    Server Online-->
+    <include
+        android:visibility="gone"
+        android:id="@+id/view_sukses"
+        android:layout_marginTop="8dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/separator"
+        layout="@layout/view_sukses" />
+
+    <!--    Server Offline-->
+    <include
+        android:visibility="gone"
+        android:id="@+id/view_offline"
+        android:layout_marginTop="8dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/judul_kajian"
+        layout="@layout/view_offline" />
+
+    <!--    LOADING DATA-->
+
+    <ProgressBar
+        android:id="@+id/main_loading"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--    No Internet Connection-->
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/cv_nointernet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/judul_kajian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/darkred"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/nowifi"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_messageError"
+            android:paddingStart="40dp"
+            android:paddingEnd="10dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:layout_below="@id/judul_kajian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/tidak_ada_koneksi_internert" />
+    </androidx.cardview.widget.CardView>
+
+    <!--    Notifikasi New Message-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/rl_newmessage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back_hijau">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/pesan_ikon"
+            android:contentDescription="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_chat_black_24dp"/>
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_below="@+id/pesan_ikon"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>
